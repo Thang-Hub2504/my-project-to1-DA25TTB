@@ -1,0 +1,33 @@
+body{	
+	font-family: "Times New Roman", Times, serif;
+
+	margin-top: 100px;
+  	margin-bottom: 100px;
+  	margin-right: 150px;
+  	margin-left: 80px;
+
+	padding-top: 50px;
+  	padding-right: 30px;
+  	padding-bottom: 50px;
+  	padding-left: 80px;
+	
+	background: linear-gradient(to right, #487fee, #32fa95);
+}
+
+h1{
+	text-align: center;
+}
+
+#img1{
+	padding: flex;
+	margin: flex;
+}
+
+table tr td{
+	border: 2px solid green;
+}
+
+th,td{
+	border-color: black;
+}
+
