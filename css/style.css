@@ -1,32 +1,83 @@
-body{	
-	font-family: "Times New Roman", Times, serif;
-
-	margin-top: 100px;
-  	margin-bottom: 100px;
-  	margin-right: 150px;
-  	margin-left: 80px;
-
-	padding-top: 50px;
-  	padding-right: 30px;
-  	padding-bottom: 50px;
-  	padding-left: 80px;
-	
+*{
+	font-family: font-family: Arial, Helvetica, sans-serif;
+	padding: 0px;
+	margin: 0px;
 }
 
 h1{
+	color: Green;
 	text-align: center;
+	padding: 20px 0px;
+	margin: 20px 20px;
 }
 
-#img1{
-	padding: flex;
-	margin: flex;
+p{
+	padding: 2px 10px;
+	margin: 0px 10px;
 }
 
-table tr td{
-	border: 2px solid green;
+table#bang1{	
+	border-collapse: collapse;
 }
 
-th,td{
-	border-color: black;
+table#bang1, table#bang1 tr, table#bang1 td{
+	border: 1px solid Green;
+	padding: 15px 20px;
+	margin: 0px 10px;
+}
+
+table#bang2{
+	border-collapse: collapse;
+	padding: 100px;
+	margin: 100px;
+}
+
+table#bang2, table#bang2 tr, table#bang2 td{
+	border: 1px solid Green;
+	padding: 15px 20px;
+	margin: 0px 10px;
+	
+}
+
+h2{
+	padding: 15px 10px;
+	margin: 10px 20px;
+	border-left: 5px solid black;
+	color: green;
+}
+
+li{
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: lightyellow;
+	padding: 10px 15px;
+	margin:5px 15px;
+	list-style-position: inside;
+}
+
+#lienhe:hover, #lienket:hover, li:hover ,td:hover , tr:hover, th:hover {
+  background-color: lightgreen;
+}
+
+#lienhe{
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px 15px;
+	margin: 5px 15px;
+	background-color: lightyellow;
+}
+
+#lienket{
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px 15px;
+	margin: 5px 15px;
+	background-color: lightyellow;
+}
+
+a:link{
+	color: green;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
