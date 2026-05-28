@@ -17,12 +17,11 @@ h1{
 	margin: 0 auto;
 	margin-top: 100px;
 	width: 220px;
-	padding: 40px;
+	padding: 60px;
 	background-color: rgb(152,251,152) 	;
 }
 
-#txtUsername1, #txtPassword1,#txtUsername2, #txtPassword2, #birthday, #email{
-	margin: 15px 0px;
+#txtUsername1, #txtPassword1,#txtUsername2, #txtPassword2, #birthday,#email{
 	padding: 10px 20px;
 	border: none;
 	border-bottom: 1px solid black;
@@ -43,4 +42,10 @@ h1{
 
 #reset:hover{
 	background-color: red;
+}
+
+#gender{
+	padding: 5px 10px;
+	margin: 2px 10px;
+	
 }
