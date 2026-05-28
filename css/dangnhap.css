@@ -1,0 +1,46 @@
+*{
+	font-family: font-family: Arial, Helvetica, sans-serif;
+	padding: 15px 5px;
+	margin: 5px 10px;
+}
+
+h1{
+	color: black;
+	text-align: center;
+	padding: 5px 0px;
+	margin: 4px 10px;
+}
+
+#formDN{
+	border: 1px solid rgb(50,205,50);
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 220px;
+	padding: 40px;
+	background-color: rgb(152,251,152) 	;
+}
+
+#txtUsername, #txtPassword{
+	margin: 15px 0px;
+	padding: 10px 20px;
+	border: none;
+	border-bottom: 1px solid black;
+	border-radius: 3px;
+}
+
+#button, #reset{
+	padding: 2px 15px;
+	margin: 5px 2px;
+	border: none;
+	border-bottom: 1px solid black;
+	border-radius: 3px;
+}
+
+#button:hover{
+	background-color: lightblue;
+}
+
+#reset:hover{
+	background-color: red;
+}
