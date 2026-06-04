@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "vi">
+	<head>
+		<title>Bảng hóa đơn</title>
+		<meta charset = "utf-8">
+		
+	</head>
+	<body>
+		<div class = "container">
+            <table border="1">
+                <tr>
+                    <th>STT</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Đơn vị tiền</th>
+                    <th>Thành tiền</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sting</td>
+                    <td class="dongia">100</td>
+                    <td class="soluong">10</td>
+                    <td>thung</td>
+                    <td class="thanhtien"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>CocaCola</td>
+                    <td class="dongia">10</td>
+                    <td class="soluong">40</td>
+                    <td>Lon</td>
+                    <td class="thanhtien"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pepsi</td>
+                    <td class="dongia">12</td>
+                    <td class="soluong">36</td>
+                    <td>lon</td>
+                    <td class="thanhtien"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Fanta</td>
+                    <td class="dongia">18</td>
+                    <td class="soluong">3</td>
+                    <td>lon</td>
+                    <td class="thanhtien"></td>
+                </tr> 
+                <tr>
+                    <td>5</td>
+                    <td>Olong</td>
+                    <td class="dongia">11</td>
+                    <td class="soluong">99</td>
+                    <td>lon</td>
+                    <td class="thanhtien"></td>
+                </tr>  
+                <tr>
+                    <td >Tổng thanh toán: </td>
+                    <td colspan= "5" id ="thanhtoan"></td>
+                </tr>              
+            </table>
+		</div>
+        <script>
+            let dg = document.getElementsByClassName("dongia");
+            let sl = document.getElementsByClassName("soluong");
+            let tt = document.getElementsByClassName("thanhtien");
+            let thanhtoan = 0;
+            for(let i=0; i<sl.length;i++){
+                tt[i].innerHTML = Number(dg[i].innerHTML) * Number(sl[i].innerHTML);
+                thanhtoan += Number(tt[i].innerHTML);    
+            }
+            document.getElementById("thanhtoan").innerHTML = thanhtoan;
+        </script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
