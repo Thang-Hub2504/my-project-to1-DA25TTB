@@ -3,7 +3,7 @@ const productitem = [
     name: "Razer Blade 14 RZ09 0482 (2023)",
     price: "60.500.000 VND",
     description: "là một chiếc laptop gaming 14 inch nhỏ gọn cao cấp, mang đến sự cân bằng gần như hoàn hảo giữa hiệu năng mạnh mẽ với CPU AMD Ryzen 9 7940HS và GPU NVIDIA RTX 40 series, cùng một thiết kế nhôm CNC di động (1.84 kg) và màn hình QHD+ 240Hz xuất sắc, lý tưởng cho cả game thủ và nhà sáng tạo nội dung.",
-    link:"https://www.razer.com/gaming-laptops/razer-blade-14",
+    link:"../html/chi_tiet_san_pham/Razer_Blade_14.html",
     image: "../assets/img/razer1.jpg"
 },
     {
