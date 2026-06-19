@@ -1,46 +1,67 @@
-*{
-	font-family: font-family: Arial, Helvetica, sans-serif;
-	padding: 15px 5px;
-	margin: 5px 10px;
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
 }
 
-h1{
-	color: black;
+body {
+	background-color: #000000;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	color: #00FF00;
 	text-align: center;
 	padding: 5px 0px;
 	margin: 4px 10px;
 }
 
-#formDN{
-	border: 1px solid rgb(50,205,50);
+#formDN {
+	border: 1px solid #00FF00;
 	border-radius: 15px;
 	margin: 0 auto;
 	margin-top: 100px;
 	width: 220px;
 	padding: 40px;
-	background-color: rgb(152,251,152) 	;
+	background-color: #1a1a1a;
 }
 
-#txtUsername, #txtPassword{
+#txtUsername, #txtPassword {
+	width: 100%;
 	margin: 15px 0px;
 	padding: 10px 20px;
 	border: none;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #00FF00;
 	border-radius: 3px;
+	background-color: #000000;
+	color: #00FF00;
 }
 
-#button, #reset{
-	padding: 2px 15px;
+#button, #reset {
+	padding: 5px 15px;
 	margin: 5px 2px;
-	border: none;
-	border-bottom: 1px solid black;
+	border: 1px solid #00FF00;
 	border-radius: 3px;
+	background-color: #000000;
+	color: #00FF00;
+	cursor: pointer;
 }
 
-#button:hover{
-	background-color: lightblue;
+#button:hover {
+	background-color: #00FF00;
+	color: #000000;
 }
 
-#reset:hover{
+#reset:hover {
 	background-color: red;
+	color: #ffffff;
+}
+
+a:link, a:visited {
+	color: #00FF00;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }

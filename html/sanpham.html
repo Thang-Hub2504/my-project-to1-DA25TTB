@@ -2,41 +2,35 @@
 <html lang="vi">
 
 <head>
-    <title>Danh sách sản phẩm</title>
     <meta charset="utf-8">
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-    <link href="../css/razer.css" rel="stylesheet">
-    <script src="../js/razer.js"></script>
+    <title>NIGHT MARKET | Sản phẩm Razer</title>
+    <meta name="description" content="Danh sách sản phẩm Razer chính hãng - Laptop, bàn phím, chuột gaming cao cấp">
+    <link rel="stylesheet" href="../css/product.css">
 </head>
+
 <body>
-    <h1>NIGHT MARKET</h1>
-    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Danh mục sản phâm</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Trang chăm sóc khách hàng</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link 3</a>
-                </li>
-            </ul>
-        </div>
-    </nav><br>
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-4 g-4" id="product-list">
-        </div>
-        <script>
-            loadallobj(productitem);
-        </script>
+
+    <nav class="razer-navbar">
+        <a href="../index.html" class="brand">RAZER <span>NIGHT MARKET</span></a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><a href="sanpham.html">Sản phẩm</a></li>
+            <li><a href="dangnhap.html">Đăng nhập</a></li>
+            <li><a href="dangki.html">Đăng ký</a></li>
+        </ul>
+    </nav>
+    <div class="page-title">
+        <h1>Sản Phẩm</h1>
+        <p class="subtitle">Bộ sưu tập thiết bị gaming cao cấp</p>
     </div>
+    <div class="product-grid" id="product-list"></div>
+    <footer class="razer-footer">
+        &copy; 2025 Razer Night Market — Nguyễn Hoàng Thắng | DA25TTB
+    </footer>
+    <script src="../js/razer.js"></script>
+    <script>
+        loadallobj(productitem);
+    </script>
 </body>
 
 </html>

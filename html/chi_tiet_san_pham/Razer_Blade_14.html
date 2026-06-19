@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
-	<title>Chi tiết sản phẩm</title>
-	<meta charset="utf-8">
-	<!-- Latest compiled and minified CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Latest compiled JavaScript -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="utf-8">
+    <title>Razer Blade 14 RZ09 0482 | Chi tiết sản phẩm</title>
+    <meta name="description" content="Chi tiết sản phẩm Razer Blade 14 RZ09 0482 (2023) - Laptop gaming cao cấp">
+    <link rel="stylesheet" href="../../css/product.css">
 </head>
-
 <body>
-	<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-		<!-- Indicators/dots -->
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-			<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-			<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-		</div>
+    <nav class="razer-navbar">
+        <a href="../../index.html" class="brand">RAZER <span>NIGHT MARKET</span></a>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Trang chủ</a></li>
+            <li><a href="../sanpham.html">Sản phẩm</a></li>
+            <li><a href="../dangnhap.html">Đăng nhập</a></li>
+        </ul>
+    </nav>
 
-		<!-- The slideshow/carousel -->
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="../../assets/Razer_img/Razer_14/1.webp" alt="left" class="d-block" style="width:50%">
-			</div>
-			<div class="carousel-item">
-				<img src="../../assets/Razer_img/Razer_14/2.webp" alt="straight" class="d-block" style="width:50%">
-			</div>
-			<div class="carousel-item">
-				<img src="../../assets/Razer_img/Razer_14/3.webp" alt="right" class="d-block" style="width:50%">
-			</div>
-		</div>
+    <div class="detail-container">
+        <div class="detail-layout">
 
-		<!-- Left and right controls/icons -->
-		<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon"></span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-			<span class="carousel-control-next-icon"></span>
-		</button>
-	</div>
-	<div class="container pt-3">
-		<div class="row row-cols-1 row-cols-md-4 g-4" id="product-list">
-			<h1>Razer Blade 14 RZ09 0482 (2023)</h1>
-			<img src="../../assets/img/razer1.jpg">
-		</div>
-	</div>
+            <div class="detail-carousel">
+                <div class="carousel-main">
+                    <img id="carousel-main-img" src="" alt="Razer Blade 14">
+                </div>
+                <div class="carousel-thumbs" id="carousel-thumbs"></div>
+            </div>
+
+            <div class="detail-info">
+                <a href="../sanpham.html" class="back-link">← Quay lại sản phẩm</a>
+                <h1 class="product-name" id="detail-name">Đang tải...</h1>
+                <p class="product-price" id="detail-price"></p>
+                <p class="product-desc" id="detail-desc"></p>
+
+                <p class="specs-title">Thông số kỹ thuật</p>
+                <table class="specs-table">
+                    <tbody id="detail-specs"></tbody>
+                </table>
+
+                <a href="#" class="btn-buy">Mua ngay</a>
+                <a href="../sanpham.html" class="btn-back">Xem tất cả</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="razer-footer">
+        &copy; 2025 Razer Night Market — Nguyễn Hoàng Thắng | DA25TTB
+    </footer>
+
+    <script src="../../js/razer.js"></script>
+    <script src="../../js/product_detail.js"></script>
+    <script>
+        loadProductDetail(0);
+    </script>
 </body>
-
 </html>

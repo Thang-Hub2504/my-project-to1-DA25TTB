@@ -1,24 +1,74 @@
 <!DOCTYPE html>
-<html lang = "vi">
+<html lang="vi">
 	<head>
-		<title>Bảng cửu chương</title>
-		<meta charset = "utf-8">
-		
+		<title>Bảng cửu chương | Razer Night Market</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Công cụ in bảng cửu chương">
+		<link rel="stylesheet" href="../css/trangchu.css">
+		<style>
+			body { padding: 32px; }
+			h1 { color: #00FF00; text-align: center; margin-bottom: 32px; }
+			form { margin-bottom: 24px; }
+			label { color: #00FF00; font-size: 0.9rem; }
+			input[type="number"] {
+				background: #111;
+				color: #00FF00;
+				border: 1px solid rgba(0,255,0,0.4);
+				border-radius: 6px;
+				padding: 8px 14px;
+				margin: 0 12px;
+				font-size: 0.9rem;
+				width: 80px;
+			}
+			input[type="button"] {
+				background: transparent;
+				color: #00FF00;
+				border: 1px solid #00FF00;
+				border-radius: 6px;
+				padding: 8px 20px;
+				font-size: 0.875rem;
+				cursor: pointer;
+				transition: background 0.2s, color 0.2s;
+			}
+			input[type="button"]:hover {
+				background: #00FF00;
+				color: #000;
+			}
+			#result {
+				margin-top: 16px;
+				background: #111;
+				border: 1px solid rgba(0,255,0,0.3);
+				border-radius: 10px;
+				padding: 20px 28px;
+				color: #e0e0e0;
+				font-size: 1rem;
+				line-height: 2;
+				min-height: 60px;
+				max-width: 320px;
+			}
+			.back-link {
+				display: inline-block;
+				margin-bottom: 20px;
+				color: #00FF00;
+				text-decoration: none;
+				font-size: 0.85rem;
+			}
+			.back-link:hover { text-decoration: underline; }
+		</style>
 	</head>
 	<body>
-		<div class = "container">
+		<a href="../index.html" class="back-link">← Quay lại trang chủ</a>
+		<h1>Bảng Cửu Chương</h1>
+		<div class="container">
             <form>
                 <label>Nhập vào 1 số từ 1 đến 10:</label>
-                <input type = "number" name = "txtSo" id = "txtSo" placeholder="Nhập vào 1 số" min = "1" max = "10" value = "2">
-                <input type = "button" id = "btnPrint" value = "In bảng cửu chương" onclick="printBCC(document.getElementById('txtSo').value)">
+                <input type="number" name="txtSo" id="txtSo" placeholder="2" min="1" max="10" value="2">
+                <input type="button" id="btnPrint" value="In bảng cửu chương" onclick="printBCC(document.getElementById('txtSo').value)">
             </form>
-			<div id = "result">
+			<div id="result">
                 Chỗ này sẽ hiển thị bảng cửu chương tương ứng
             </div>
-            
 		</div>
-        <script src = "../js/lib.js">
-
-		</script>
+        <script src="../js/lib.js"></script>
 	</body>
 </html>

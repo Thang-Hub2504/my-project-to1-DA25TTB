@@ -1,19 +1,60 @@
 <!DOCTYPE html>
-<html lang = "vi">
+<html lang="vi">
 	<head>
-		<title>Bảng hóa đơn</title>
-		<meta charset = "utf-8">
-		
+		<title>Hóa đơn thanh toán | Razer Night Market</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Hóa đơn thanh toán các sản phẩm Razer">
+		<link rel="stylesheet" href="../css/trangchu.css">
+		<style>
+			body { padding: 32px; }
+			h1 { color: #00FF00; text-align: center; margin-bottom: 24px; }
+			table {
+				border-collapse: collapse;
+				width: 100%;
+				margin: 0 auto;
+			}
+			th, td {
+				border: 1px solid rgba(0,255,0,0.4);
+				padding: 14px 18px;
+				text-align: left;
+			}
+			th {
+				background: #111;
+				color: #00FF00;
+				font-size: 0.85rem;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			td { color: #e0e0e0; font-size: 0.9rem; }
+			tr:hover td { background: rgba(0,255,0,0.06); }
+			td.thanhtien { color: #00FF00; font-weight: 600; }
+			#row-total td {
+				border-top: 2px solid #00FF00;
+				font-weight: 700;
+			}
+			#row-total td:first-child { color: #888; }
+			#thanhtoan { color: #00FF00; font-size: 1.1rem; }
+			.back-link {
+				display: inline-block;
+				margin-bottom: 20px;
+				color: #00FF00;
+				text-decoration: none;
+				font-size: 0.85rem;
+			}
+			.back-link:hover { text-decoration: underline; }
+		</style>
 	</head>
 	<body>
-		<div class = "container">
-            <table border="1">
+		<a href="../index.html" class="back-link">← Quay lại trang chủ</a>
+		<h1>Hóa Đơn Thanh Toán</h1>
+		<div class="container">
+            <table>
                 <tr>
                     <th>STT</th>
                     <th>Tên sản phẩm</th>
                     <th>Đơn giá</th>
                     <th>Số lượng</th>
-                    <th>Đơn vị tiền</th>
+                    <th>Đơn vị</th>
                     <th>Thành tiền</th>
                 </tr>
                 <tr>
@@ -21,7 +62,7 @@
                     <td>Sting</td>
                     <td class="dongia">100</td>
                     <td class="soluong">10</td>
-                    <td>thung</td>
+                    <td>thùng</td>
                     <td class="thanhtien"></td>
                 </tr>
                 <tr>
@@ -47,7 +88,7 @@
                     <td class="soluong">3</td>
                     <td>lon</td>
                     <td class="thanhtien"></td>
-                </tr> 
+                </tr>
                 <tr>
                     <td>5</td>
                     <td>Olong</td>
@@ -55,11 +96,11 @@
                     <td class="soluong">99</td>
                     <td>lon</td>
                     <td class="thanhtien"></td>
-                </tr>  
-                <tr>
-                    <td >Tổng thanh toán: </td>
-                    <td colspan= "5" id ="thanhtoan"></td>
-                </tr>              
+                </tr>
+                <tr id="row-total">
+                    <td colspan="5">Tổng thanh toán:</td>
+                    <td id="thanhtoan"></td>
+                </tr>
             </table>
 		</div>
         <script>
@@ -67,20 +108,11 @@
             let sl = document.getElementsByClassName("soluong");
             let tt = document.getElementsByClassName("thanhtien");
             let thanhtoan = 0;
-            for(let i=0; i<sl.length;i++){
+            for (let i = 0; i < sl.length; i++) {
                 tt[i].innerHTML = Number(dg[i].innerHTML) * Number(sl[i].innerHTML);
-                thanhtoan += Number(tt[i].innerHTML);    
+                thanhtoan += Number(tt[i].innerHTML);
             }
-            document.getElementById("thanhtoan").innerHTML = thanhtoan;
+            document.getElementById("thanhtoan").innerHTML = thanhtoan.toLocaleString('vi-VN');
         </script>
 	</body>
 </html>
-
-
-
-
-
-
-
-
-
