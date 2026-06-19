@@ -112,26 +112,29 @@ const productitem = [
 ];
 
 function createV2(obj) {
-    const productlist = document.getElementById("product-list");
-    if (!productlist) return;
-    const card = document.createElement("div");
+    var productlist = document.getElementById("product-list");
+
+    if (productlist == null) return;
+
+    var card = document.createElement("div");
     card.className = "product-card";
-    card.innerHTML = `
-        <div class="card-img-wrap">
-            <img src="${obj.image}" alt="${obj.name}">
-        </div>
-        <div class="card-body">
-            <h3 class="card-name">${obj.name}</h3>
-            <p class="card-desc">${obj.description}</p>
-            <p class="card-price">${obj.price}</p>
-            <a href="${obj.link}" class="btn-detail">Chi tiết</a>
-        </div>
-    `;
+
+    card.innerHTML =
+        '<div class="card-img-wrap">' +
+            '<img src="' + obj.image + '" alt="' + obj.name + '">' +
+        '</div>' +
+        '<div class="card-body">' +
+            '<h3 class="card-name">' + obj.name + '</h3>' +
+            '<p class="card-desc">' + obj.description + '</p>' +
+            '<p class="card-price">' + obj.price + '</p>' +
+            '<a href="' + obj.link + '" class="btn-detail">Chi tiết</a>' +
+        '</div>';
+
     productlist.appendChild(card);
 }
 
 function loadallobj(objarray) {
-    for (let i = 0; i < objarray.length; i++) {
+    for (var i = 0; i < objarray.length; i++) {
         createV2(objarray[i]);
     }
 }
