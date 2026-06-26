@@ -29,14 +29,18 @@ p {
 	margin: 0px;
 }
 
-table#bang1, table#bang2 {
+table#bang1,
+table#bang2 {
 	border-collapse: collapse;
 	width: 100%;
 	margin: 10px 0px;
 }
 
-table#bang1 td, table#bang1 tr,
-table#bang2 td, table#bang2 tr, table#bang2 th {
+table#bang1 td,
+table#bang1 tr,
+table#bang2 td,
+table#bang2 tr,
+table#bang2 th {
 	border: 1px solid #00FF00;
 	padding: 15px 20px;
 }
@@ -51,7 +55,9 @@ li {
 	list-style-position: inside;
 }
 
-#lienhe, #lienket, #formDNDK {
+#lienhe,
+#lienket,
+#formDNDK {
 	display: inline-block;
 	border: 1px solid #00FF00;
 	border-radius: 10px;
@@ -60,12 +66,8 @@ li {
 	background-color: #1a1a1a;
 }
 
-#lienhe:hover, #lienket:hover, li:hover, td:hover, tr:hover, th:hover {
-	background-color: #00FF00;
-	color: #000000;
-}
-
-a:link, a:visited {
+a:link,
+a:visited {
 	color: #00FF00;
 	text-decoration: none;
 	text-transform: uppercase;
